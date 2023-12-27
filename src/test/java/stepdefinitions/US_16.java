@@ -101,8 +101,9 @@ public class US_16 {
 
     @And("user make transfer")
     public void userMakeTransfer() throws InterruptedException {
+
         customerPage.MakeTransfer.click();
-        Thread.sleep(1000);
+        Thread.sleep(4000);
        Assert.assertTrue(customerPage.successfull.isDisplayed());
 
     }
