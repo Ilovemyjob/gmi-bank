@@ -10,14 +10,13 @@ import org.openqa.selenium.WebElement;
 import pages.RegistrationPage;
 import utilities.ConfigReader;
 import utilities.Driver;
-import utilities.ReusableMethods;
 
 import java.util.List;
 
 
 public class US_2 {
 
-    Faker faker = new Faker();
+  //  Faker faker = new Faker();
     RegistrationPage registrationPage = new RegistrationPage();
 
 
@@ -111,7 +110,7 @@ public class US_2 {
     public void userVerifiesTheSSNInvalidMessage() throws InterruptedException {
         Thread.sleep(2000);
         System.out.println(registrationPage.ssntextinvalid.getText());
-        String expected =registrationPage.ssntextinvalid.getText();
+      //  String expected =registrationPage.ssntextinvalid.getText();
         Assert.assertTrue(registrationPage.ssntextinvalid.getText().equals("Your SSN is invalid"));
 
         //Assert.assertTrue(us_2.ssntextinvalid.getText().contains("Your SSN is invalid\n"));

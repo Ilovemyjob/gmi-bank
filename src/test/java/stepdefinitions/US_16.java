@@ -1,25 +1,20 @@
 package stepdefinitions;
 
-import io.cucumber.java.bs.A;
+
 import io.cucumber.java.en.And;
-import io.cucumber.java.en.Given;
-import org.apache.poi.ss.formula.functions.T;
 import org.junit.Assert;
-import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.Select;
 import pages.CustomerPage;
 import pages.SignIn;
 import utilities.ConfigReader;
-import utilities.ReusableMethods;
 
-import java.util.ArrayList;
-import java.util.List;
+
 
 public class US_16 {
 
     CustomerPage customerPage = new CustomerPage();
     SignIn signIn =new SignIn();
-    ReusableMethods reusableMethods = new ReusableMethods();
+  //  ReusableMethods reusableMethods = new ReusableMethods();
 
 
 
@@ -49,7 +44,7 @@ public class US_16 {
 
 
     @And("user can select first account")
-    public void userCanSelectFirstAccount() throws InterruptedException {
+    public void userCanSelectFirstAccount()  {
 
         customerPage.fromAccount.click();
         Select options = new Select(customerPage.fromAccount);
